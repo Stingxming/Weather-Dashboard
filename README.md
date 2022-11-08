@@ -18,9 +18,9 @@
 
 # Matty C's Weather Dashboard
 
-Deployed Url:
+Deployed Url: https://stingxming.github.io/Weather-Dashboard/
 
-Github repo: 
+Github repo: https://github.com/Stingxming/Weather-Dashboard
 
 ## User Story
 
