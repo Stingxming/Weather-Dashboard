@@ -1,21 +1,15 @@
-//Declare a variable to store the searched city
-var city = "";
-// variable declaration
-var searchCity = $("#search-city");
-var searchButton = $("#search-button");
-var clearButton = $("#clear-history");
-var currentCity = $("#current-city");
-var currentTemperature = $("#temperature");
-var currentHumidty = $("#humidity");
-var currentWSpeed = $("#wind-speed");
-var currentUvindex = $("#uv-index");
-var sCity = [];
-// searches the city to see if it exists in the entries from the storage
-function find(c) {
-  for (var i = 0; i < sCity.length; i++) {
-    if (c.toUpperCase() === sCity[i]) {
-      return -1;
-    }
-  }
-  return 1;
+function initPage() {
+  const cityEl = document.getElementById("enter-city");
+  const searchEl = document.getElementById("search-button");
+  const clearEl = document.getElementById("clear-history");
+  const nameEl = document.getElementById("city-name");
+  const currentPicEl = document.getElementById("current-pic");
+  const currentTempEl = document.getElementById("temperature");
+  const currentHumidityEl = document.getElementById("humidity");
+  const currentWindEl = document.getElementById("wind-speed");
+  const currentUVEl = document.getElementById("UV-index");
+  const historyEl = document.getElementById("history");
+  var fivedayEl = document.getElementById("fiveday-header");
+  var todayweatherEl = document.getElementById("today-weather");
+  let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 }
